@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="index.css" />
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="dropdowns">
+<select id="select1" disabled>
+<option value="Human">Human</option>
+<option value="Cat">Cat</option>
+<option value="Dog">Dog</option>
+<option value="Monkey">Monkey</option>
+<option value="Monkey">Monkey</option>
+</select>
+
+<select id="select2">
+<option value="Human" disabled>Human</option>
+<option value="Cat" selected>Cat</option>
+<option value="Dog">Dog</option>
+<option value="Monkey">Monkey</option>
+<option value="Banana">Banana</option>
+</select>
+
+<button id="sendSelect" onclick="drawMeme()">Submit</button>
+</div>
+<div id="modal-bg" onclick="closeModal()"></div>
+<div id="modal">
+<div id="close" onclick="closeModal()">✖</div>
+<h4>CREATE YOUR MEME</h4>
+
+<select id='topLineText' onChange='getTopText()' style="display:none;">
+	<option value=''>Select Top Text From List</option>
+    <option value='Top Text 1'>Top Text 1</option>
+    <option value='Top Text 2'>Top Text 2</option>
+</select>
+<div id="output">
+
+</div>
+<select id='bottomLineText' onChange='getBottomText()' style="display:none;">
+	<option value=''>Select Bottom Text From List</option>
+    <option value='Bottom Text 1'>Bottom Text 1</option>
+    <option value='Bottom Text 2'>Bottom Text 2</option>
+</select>
+
+<div id="button"></div>
+
+</div>
+
+</body>
+
+<script type="text/javascript" src="index.js"></script>
+
+</html>
